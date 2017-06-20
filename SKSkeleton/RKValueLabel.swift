@@ -19,8 +19,8 @@ class RKValueLabel: SKLabelNode {
         super.init()
         
         fontColor = .white
-        fontName = fonts.groovy.rawValue
-        fontSize = kPointsLabelFontSize
+        fontName = fonts.bold.rawValue
+        fontSize = kScreenScale * 15
         
         setTo(num)
     }

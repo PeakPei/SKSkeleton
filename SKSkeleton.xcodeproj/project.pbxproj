@@ -14,6 +14,10 @@
 		942F69871EF8D5DC00A4606A /* RKAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F69821EF8D5DC00A4606A /* RKAnimations.swift */; };
 		942F69881EF8D5DC00A4606A /* RKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F69831EF8D5DC00A4606A /* RKButton.swift */; };
 		942F698B1EF8D6E500A4606A /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F698A1EF8D6E500A4606A /* constants.swift */; };
+		942F698D1EF8E0AF00A4606A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 942F698C1EF8E0AF00A4606A /* background.png */; };
+		942F698F1EF8E0DE00A4606A /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 942F698E1EF8E0DE00A4606A /* playButton.png */; };
+		942F69911EF8E12200A4606A /* RifficFree-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 942F69901EF8E12200A4606A /* RifficFree-Bold.ttf */; };
+		942F69931EF8E12C00A4606A /* Variane Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 942F69921EF8E12C00A4606A /* Variane Script.ttf */; };
 		947446461EF8A404002FD590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947446451EF8A404002FD590 /* AppDelegate.swift */; };
 		9474464C1EF8A404002FD590 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474464B1EF8A404002FD590 /* GameScene.swift */; };
 		9474464E1EF8A404002FD590 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474464D1EF8A404002FD590 /* GameViewController.swift */; };
@@ -35,6 +39,10 @@
 		942F69821EF8D5DC00A4606A /* RKAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAnimations.swift; sourceTree = "<group>"; };
 		942F69831EF8D5DC00A4606A /* RKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKButton.swift; sourceTree = "<group>"; };
 		942F698A1EF8D6E500A4606A /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		942F698C1EF8E0AF00A4606A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		942F698E1EF8E0DE00A4606A /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		942F69901EF8E12200A4606A /* RifficFree-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RifficFree-Bold.ttf"; sourceTree = "<group>"; };
+		942F69921EF8E12C00A4606A /* Variane Script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Variane Script.ttf"; sourceTree = "<group>"; };
 		947446421EF8A404002FD590 /* SKSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947446451EF8A404002FD590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9474464B1EF8A404002FD590 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -133,6 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				947446521EF8A404002FD590 /* Assets.xcassets */,
+				942F698C1EF8E0AF00A4606A /* background.png */,
+				942F698E1EF8E0DE00A4606A /* playButton.png */,
+				942F69901EF8E12200A4606A /* RifficFree-Bold.ttf */,
+				942F69921EF8E12C00A4606A /* Variane Script.ttf */,
 			);
 			name = Media;
 			sourceTree = "<group>";
@@ -230,9 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				947446631EF8A7A4002FD590 /* Info.plist in Resources */,
+				942F698D1EF8E0AF00A4606A /* background.png in Resources */,
+				942F69931EF8E12C00A4606A /* Variane Script.ttf in Resources */,
+				942F69911EF8E12200A4606A /* RifficFree-Bold.ttf in Resources */,
 				947446511EF8A404002FD590 /* Main.storyboard in Resources */,
 				947446531EF8A404002FD590 /* Assets.xcassets in Resources */,
 				947446641EF8A7A4002FD590 /* iRate.bundle in Resources */,
+				942F698F1EF8E0DE00A4606A /* playButton.png in Resources */,
 				947446561EF8A404002FD590 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +447,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5FTS5682FV;
 				INFOPLIST_FILE = SKSkeleton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RyanKnightly.SKSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +465,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5FTS5682FV;
 				INFOPLIST_FILE = SKSkeleton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RyanKnightly.SKSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";

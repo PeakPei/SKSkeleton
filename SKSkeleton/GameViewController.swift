@@ -9,27 +9,62 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import Firebase
 
 class GameViewController: UIViewController {
 
+    @IBOutlet var banner: GADBannerView!
+    var interstitial: GADInterstitial!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+        
+        GADMobileAds.configure(withApplicationID: kAdAppID)
+        
+        banner.adUnitID = kBannerID
+        banner.rootViewController = self
+        banner.load(GADRequest())
+        
+        //Configure the view
+        let skView = view as! SKView
+        skView.isMultipleTouchEnabled = false
+        
+        //Create and configure the scene
+        let scene = StartScene(size: skView.bounds.size)
+        scene.scaleMode = .aspectFill
+        
+        //Present the scene
+        skView.presentScene(scene, transition: kScreenTransition)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(GameViewController.showInterstitial),
+                                               name: NSNotification.Name(rawValue: "showInterstitial"),
+                                               object: nil)
+    }
+    
+    func showInterstitial() {
+        print("showing interstitial")
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+            interstitial = createAd()
+        } else {
+            print("Not ready yet")
         }
+    }
+    
+    override func viewWillLayoutSubviews(){
+        super.viewWillLayoutSubviews()
+        //Set up the banner
+        print("loading request")
+        interstitial = GADInterstitial(adUnitID: kInterstitialID)
+        let request = GADRequest()
+        interstitial.load(request)
+    }
+    
+    func createAd() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: kInterstitialID)
+        interstitial.load(GADRequest())
+        return interstitial
     }
 
     override var shouldAutorotate: Bool {
