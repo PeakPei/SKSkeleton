@@ -33,12 +33,20 @@ enum layer: CGFloat {
     case secondUserInterface = 4
 }
 
+// MARK: - Graphic design
 enum fonts: String {
     case cursive = "Variane Script"
     case bold = "Riffic Free"
     case gameName = "Ailerons"
 }
 
+struct RKColors {
+    static let blue = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1)
+    static let green = UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1)
+    static let yellow = UIColor(red: 248/255, green: 224/255, blue: 66/255, alpha: 1)
+}
+
+// MARK: - Ads
 let kAppStoreID: UInt = 0 //TODO: Fill out
 
 let kAdFrequency: Int = 3

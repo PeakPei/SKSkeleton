@@ -93,6 +93,22 @@
 			name = "Support Classes";
 			sourceTree = "<group>";
 		};
+		942F699C1EF8E9FD00A4606A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				9474464B1EF8A404002FD590 /* GameScene.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		942F699D1EF8EA0200A4606A /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				9474466A1EF8A845002FD590 /* StartScene.swift */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
 		947446391EF8A403002FD590 = {
 			isa = PBXGroup;
 			children = (
@@ -152,8 +168,8 @@
 		9474466C1EF8A898002FD590 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				9474464B1EF8A404002FD590 /* GameScene.swift */,
-				9474466A1EF8A845002FD590 /* StartScene.swift */,
+				942F699C1EF8E9FD00A4606A /* Game */,
+				942F699D1EF8EA0200A4606A /* Start */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
