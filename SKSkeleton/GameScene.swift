@@ -47,18 +47,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func addHighscoreLabel() {
         // Big highscore label in the welcome screen
         highscoreLabel = RKValueLabel(num: RKUserDefaults.highscore)
-        highscoreLabel.position = CGPoint(x: screenWidth * 0.9, y: screenHeight * 0.9)
+        highscoreLabel.position = CGPoint(x: screenWidth * 0.95, y: screenHeight * 0.9)
         highscoreLabel.fontSize = kScreenScale * 10
-        highscoreLabel.horizontalAlignmentMode = .left
+        highscoreLabel.horizontalAlignmentMode = .right
         highscoreLabel.zPosition = layer.userInterface.rawValue
+        highscoreLabel.setPrefix(newPrefix: "Best: ")
         addChild(highscoreLabel)
-        
-        let highscoreText = SKLabelNode(text: "Best:")
-        highscoreLabel.addChild(highscoreText)
-        highscoreText.fontSize = highscoreLabel.fontSize
-        highscoreText.fontName = fonts.bold.rawValue
-        highscoreText.position = CGPoint(x: -highscoreLabel.fontSize * 0.3, y: 0)
-        highscoreText.horizontalAlignmentMode = .right
     }
     
     func blinkHighscoreLabel() {

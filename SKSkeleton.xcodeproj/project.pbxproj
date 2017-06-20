@@ -131,12 +131,12 @@
 		947446441EF8A404002FD590 /* SKSkeleton */ = {
 			isa = PBXGroup;
 			children = (
-				942F698A1EF8D6E500A4606A /* constants.swift */,
 				942F69891EF8D5E300A4606A /* Support Classes */,
 				9474466D1EF8A8B3002FD590 /* Controllers */,
 				947446691EF8A7E4002FD590 /* Media */,
-				947446571EF8A404002FD590 /* Info.plist */,
 				9474466C1EF8A898002FD590 /* Scenes */,
+				942F698A1EF8D6E500A4606A /* constants.swift */,
+				947446571EF8A404002FD590 /* Info.plist */,
 			);
 			path = SKSkeleton;
 			sourceTree = "<group>";
