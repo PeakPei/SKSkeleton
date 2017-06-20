@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8821C17EB3852EA07F1496 /* libPods-SKSkeleton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7203FC8BB1C77BF114921C /* libPods-SKSkeleton.a */; };
+		942F69841EF8D5DC00A4606A /* ASAttributedLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F697F1EF8D5DC00A4606A /* ASAttributedLabelNode.swift */; };
+		942F69851EF8D5DC00A4606A /* RKUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F69801EF8D5DC00A4606A /* RKUserDefaults.swift */; };
+		942F69861EF8D5DC00A4606A /* RKValueLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F69811EF8D5DC00A4606A /* RKValueLabel.swift */; };
+		942F69871EF8D5DC00A4606A /* RKAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F69821EF8D5DC00A4606A /* RKAnimations.swift */; };
+		942F69881EF8D5DC00A4606A /* RKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F69831EF8D5DC00A4606A /* RKButton.swift */; };
+		942F698B1EF8D6E500A4606A /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F698A1EF8D6E500A4606A /* constants.swift */; };
 		947446461EF8A404002FD590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947446451EF8A404002FD590 /* AppDelegate.swift */; };
 		9474464C1EF8A404002FD590 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474464B1EF8A404002FD590 /* GameScene.swift */; };
 		9474464E1EF8A404002FD590 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474464D1EF8A404002FD590 /* GameViewController.swift */; };
 		947446511EF8A404002FD590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9474464F1EF8A404002FD590 /* Main.storyboard */; };
 		947446531EF8A404002FD590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947446521EF8A404002FD590 /* Assets.xcassets */; };
 		947446561EF8A404002FD590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947446541EF8A404002FD590 /* LaunchScreen.storyboard */; };
+		947446631EF8A7A4002FD590 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9474465F1EF8A7A4002FD590 /* Info.plist */; };
+		947446641EF8A7A4002FD590 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 947446601EF8A7A4002FD590 /* iRate.bundle */; };
+		947446681EF8A7BE002FD590 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 947446671EF8A7BE002FD590 /* iRate.m */; };
+		9474466B1EF8A845002FD590 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474466A1EF8A845002FD590 /* StartScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7203FC8BB1C77BF114921C /* libPods-SKSkeleton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKSkeleton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AB44554A314148B8551B8E /* Pods-SKSkeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSkeleton.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKSkeleton/Pods-SKSkeleton.release.xcconfig"; sourceTree = "<group>"; };
+		942F697F1EF8D5DC00A4606A /* ASAttributedLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAttributedLabelNode.swift; sourceTree = "<group>"; };
+		942F69801EF8D5DC00A4606A /* RKUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKUserDefaults.swift; sourceTree = "<group>"; };
+		942F69811EF8D5DC00A4606A /* RKValueLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKValueLabel.swift; sourceTree = "<group>"; };
+		942F69821EF8D5DC00A4606A /* RKAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAnimations.swift; sourceTree = "<group>"; };
+		942F69831EF8D5DC00A4606A /* RKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKButton.swift; sourceTree = "<group>"; };
+		942F698A1EF8D6E500A4606A /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		947446421EF8A404002FD590 /* SKSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947446451EF8A404002FD590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9474464B1EF8A404002FD590 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -24,6 +43,13 @@
 		947446521EF8A404002FD590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947446551EF8A404002FD590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947446571EF8A404002FD590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9474465F1EF8A7A4002FD590 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947446601EF8A7A4002FD590 /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iRate.bundle; sourceTree = "<group>"; };
+		947446611EF8A7A4002FD590 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		947446661EF8A7BE002FD590 /* SKSkeleton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKSkeleton-Bridging-Header.h"; sourceTree = "<group>"; };
+		947446671EF8A7BE002FD590 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		9474466A1EF8A845002FD590 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		AA422CA26E707EE01AD20B81 /* Pods-SKSkeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKSkeleton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKSkeleton/Pods-SKSkeleton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8821C17EB3852EA07F1496 /* libPods-SKSkeleton.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5095D7C8A4B4F7EBFCD3874C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA422CA26E707EE01AD20B81 /* Pods-SKSkeleton.debug.xcconfig */,
+				79AB44554A314148B8551B8E /* Pods-SKSkeleton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		942F69891EF8D5E300A4606A /* Support Classes */ = {
+			isa = PBXGroup;
+			children = (
+				942F697F1EF8D5DC00A4606A /* ASAttributedLabelNode.swift */,
+				942F69801EF8D5DC00A4606A /* RKUserDefaults.swift */,
+				942F69811EF8D5DC00A4606A /* RKValueLabel.swift */,
+				942F69821EF8D5DC00A4606A /* RKAnimations.swift */,
+				942F69831EF8D5DC00A4606A /* RKButton.swift */,
+			);
+			name = "Support Classes";
+			sourceTree = "<group>";
+		};
 		947446391EF8A403002FD590 = {
 			isa = PBXGroup;
 			children = (
+				9474465D1EF8A7A4002FD590 /* iRate */,
 				947446441EF8A404002FD590 /* SKSkeleton */,
 				947446431EF8A404002FD590 /* Products */,
+				5095D7C8A4B4F7EBFCD3874C /* Pods */,
+				A4FE77676BBC8ADDA96995F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +107,62 @@
 		947446441EF8A404002FD590 /* SKSkeleton */ = {
 			isa = PBXGroup;
 			children = (
-				947446451EF8A404002FD590 /* AppDelegate.swift */,
-				9474464B1EF8A404002FD590 /* GameScene.swift */,
-				9474464D1EF8A404002FD590 /* GameViewController.swift */,
-				9474464F1EF8A404002FD590 /* Main.storyboard */,
-				947446521EF8A404002FD590 /* Assets.xcassets */,
-				947446541EF8A404002FD590 /* LaunchScreen.storyboard */,
+				942F698A1EF8D6E500A4606A /* constants.swift */,
+				942F69891EF8D5E300A4606A /* Support Classes */,
+				9474466D1EF8A8B3002FD590 /* Controllers */,
+				947446691EF8A7E4002FD590 /* Media */,
 				947446571EF8A404002FD590 /* Info.plist */,
+				9474466C1EF8A898002FD590 /* Scenes */,
 			);
 			path = SKSkeleton;
+			sourceTree = "<group>";
+		};
+		9474465D1EF8A7A4002FD590 /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				9474465F1EF8A7A4002FD590 /* Info.plist */,
+				947446601EF8A7A4002FD590 /* iRate.bundle */,
+				947446611EF8A7A4002FD590 /* iRate.h */,
+				947446671EF8A7BE002FD590 /* iRate.m */,
+				947446661EF8A7BE002FD590 /* SKSkeleton-Bridging-Header.h */,
+			);
+			path = iRate;
+			sourceTree = "<group>";
+		};
+		947446691EF8A7E4002FD590 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				947446521EF8A404002FD590 /* Assets.xcassets */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		9474466C1EF8A898002FD590 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9474464B1EF8A404002FD590 /* GameScene.swift */,
+				9474466A1EF8A845002FD590 /* StartScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		9474466D1EF8A8B3002FD590 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				947446541EF8A404002FD590 /* LaunchScreen.storyboard */,
+				9474464F1EF8A404002FD590 /* Main.storyboard */,
+				947446451EF8A404002FD590 /* AppDelegate.swift */,
+				9474464D1EF8A404002FD590 /* GameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A4FE77676BBC8ADDA96995F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B7203FC8BB1C77BF114921C /* libPods-SKSkeleton.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9474465A1EF8A404002FD590 /* Build configuration list for PBXNativeTarget "SKSkeleton" */;
 			buildPhases = (
+				18557EB48D435DE2FBE11FCE /* [CP] Check Pods Manifest.lock */,
 				9474463E1EF8A403002FD590 /* Sources */,
 				9474463F1EF8A403002FD590 /* Frameworks */,
 				947446401EF8A403002FD590 /* Resources */,
+				DF6313E639A16280A50E6B9F /* [CP] Embed Pods Frameworks */,
+				1CE382D69138D73ECFF585BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +201,7 @@
 					947446411EF8A403002FD590 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5FTS5682FV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,22 +229,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947446631EF8A7A4002FD590 /* Info.plist in Resources */,
 				947446511EF8A404002FD590 /* Main.storyboard in Resources */,
 				947446531EF8A404002FD590 /* Assets.xcassets in Resources */,
+				947446641EF8A7A4002FD590 /* iRate.bundle in Resources */,
 				947446561EF8A404002FD590 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18557EB48D435DE2FBE11FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1CE382D69138D73ECFF585BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSkeleton/Pods-SKSkeleton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6313E639A16280A50E6B9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKSkeleton/Pods-SKSkeleton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9474463E1EF8A403002FD590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942F69881EF8D5DC00A4606A /* RKButton.swift in Sources */,
+				942F69851EF8D5DC00A4606A /* RKUserDefaults.swift in Sources */,
+				942F69871EF8D5DC00A4606A /* RKAnimations.swift in Sources */,
 				9474464C1EF8A404002FD590 /* GameScene.swift in Sources */,
+				942F698B1EF8D6E500A4606A /* constants.swift in Sources */,
 				9474464E1EF8A404002FD590 /* GameViewController.swift in Sources */,
 				947446461EF8A404002FD590 /* AppDelegate.swift in Sources */,
+				9474466B1EF8A845002FD590 /* StartScene.swift in Sources */,
+				942F69841EF8D5DC00A4606A /* ASAttributedLabelNode.swift in Sources */,
+				947446681EF8A7BE002FD590 /* iRate.m in Sources */,
+				942F69861EF8D5DC00A4606A /* RKValueLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,26 +425,33 @@
 		};
 		9474465B1EF8A404002FD590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA422CA26E707EE01AD20B81 /* Pods-SKSkeleton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5FTS5682FV;
 				INFOPLIST_FILE = SKSkeleton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RyanKnightly.SKSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iRate/SKSkeleton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9474465C1EF8A404002FD590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AB44554A314148B8551B8E /* Pods-SKSkeleton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5FTS5682FV;
 				INFOPLIST_FILE = SKSkeleton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RyanKnightly.SKSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iRate/SKSkeleton-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -308,6 +475,7 @@
 				9474465C1EF8A404002FD590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
