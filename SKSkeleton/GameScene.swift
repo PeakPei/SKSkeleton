@@ -79,6 +79,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 blinkHighscoreLabel()
             }
         }
+        
+        scoreLabel.run(SKAction.sequence([SKAction.scale(to: 1.5, duration:TimeInterval(0.1)), SKAction.scale(to: 1.0, duration:TimeInterval(0.1))]))
     }
     
     func gameOver() {
