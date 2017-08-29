@@ -11,7 +11,6 @@ import GameplayKit
 
 class StartScene: SKScene{
     var score: Int = 0
-    var highscore: Int = 0
     
     let scoreLabelPosition = CGPoint(x: screenSize.width * 0.5, y: screenSize.height * 0.67)
     let highscoreLabelPosition = CGPoint(x: screenSize.width * 0.5, y: screenSize.height * 0.55)
@@ -40,11 +39,6 @@ class StartScene: SKScene{
         score = newScore
     }
     
-    func getHighscore() -> Int {
-        let defaults = UserDefaults.standard
-        return defaults.integer(forKey: "highScore")
-    }
-    
     func addBackground() {
         let background = SKSpriteNode(texture: SKTexture(imageNamed: "background.png"), color: .clear, size: self.size)
         background.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
@@ -69,8 +63,7 @@ class StartScene: SKScene{
     }
     
     func addHighscoreLabel() {
-        highscore = getHighscore()
-        let highscoreLabel = RKValueLabel(num: highscore)
+        let highscoreLabel = RKValueLabel(num: RKUserDefaults.highscore)
         highscoreLabel.setPrefix(newPrefix: "BEST ")
         highscoreLabel.position = highscoreLabelPosition
         highscoreLabel.fontSize = highscoreFontSize
